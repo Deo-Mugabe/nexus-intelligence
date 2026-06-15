@@ -17,16 +17,7 @@ Built for organizations that need:
 
 ## Architecture
 
-```mermaid
-flowchart LR
-    DS[Data Sources] --> F[Federation]
-    F --> CE[Context Engine]
-    CE --> AM[Agent Mesh]
-    AM --> UI[UI]
-
-    UI -. Feedback .-> CE
-    CE -. Learning .-> F
-```
+![Nexus Intelligence Architecture](docs/architecture/nexus_intelligence_architecture)
 
 ## Quick Start
 
