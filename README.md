@@ -17,7 +17,9 @@ Built for organizations that need:
 
 ## Architecture
 
-![Nexus Intelligence Architecture](docs/architecture/nexus_intelligence_architecture)
+<p align="center">
+  <img src="docs/architecture/nexus_intelligence_architecture.svg" width="100%" alt="Nexus Intelligence Architecture"/>
+</p>
 
 ## Quick Start
 
