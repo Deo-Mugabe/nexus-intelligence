@@ -18,10 +18,8 @@ Built for organizations that need:
 ## Architecture
 
 Data Sources → Federation → Context Engine → Agent Mesh → UI
-
-↑                                           │
-
-└── Learning ───────┘
+      ↑         │
+      └──── Learning ────┘
 
 ## Quick Start
 
