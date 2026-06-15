@@ -5,23 +5,20 @@ of content federation, context assembly, and agentic AI.
 
 ## What This Is
 
-Nexus Intelligence is a full enterprise intelligence platform built
-in Python, implementing the architectural patterns of systems like
-Hyland's Content Innovation Cloud:
+Nexus Intelligence is an enterprise-grade intelligence platform
+that federates data from any source, builds institutional context,
+and powers autonomous AI agents â€” without moving or migrating data.
 
-- **Content Federation Service** â€” connect any data source, no migration
-- **Enterprise Context Engine** â€” knowledge graph, dual indexing, context assembly
-- **Document Intelligence Service** â€” IDP, extraction, classification
-- **Agent Mesh** â€” multi-agent ORDER loop orchestration
-- **Governance Service** â€” audit trail, guard rails, observability
-- **Human in the Loop** â€” review queue, override capture, learning signals
-- **API Gateway** â€” single entry point, auth, routing
-- **Dashboard UI** â€” caseworker interface, admin panel, analytics
+Built for organizations that need:
+- AI that reasons with institutional memory, not just retrieved documents
+- Data that stays where it is, accessed not copied
+- Agents that learn from every human decision
+- Full auditability of every AI action
 
 ## Architecture
 
 Data Sources â†’ Federation â†’ Context Engine â†’ Agent Mesh â†’ UI
-â†‘                  â”‚
+â†‘       â”‚
 â””â”€â”€ Learning â”€â”€â”€â”€â”€â”€â”€â”˜
 
 ## Quick Start
@@ -44,14 +41,14 @@ make test-federation
 
 | Service | Status |
 |---|---|
-| Federation | í´¨ In Progress |
-| Context Engine | í³‹ Planned |
-| Document Intel | í³‹ Planned |
-| Agent Mesh | í³‹ Planned |
-| Governance | í³‹ Planned |
-| HITL | í³‹ Planned |
-| Gateway | í³‹ Planned |
-| Dashboard | í³‹ Planned |
+| Federation | ï¿½ï¿½ï¿½ In Progress |
+| Context Engine | ï¿½ï¿½ï¿½ Planned |
+| Document Intel | ï¿½ï¿½ï¿½ Planned |
+| Agent Mesh | ï¿½ï¿½ï¿½ Planned |
+| Governance | ï¿½ï¿½ï¿½ Planned |
+| HITL | ï¿½ï¿½ï¿½ Planned |
+| Gateway | ï¿½ï¿½ï¿½ Planned |
+| Dashboard | ï¿½ï¿½ï¿½ Planned |
 
 ## Tech Stack
 
