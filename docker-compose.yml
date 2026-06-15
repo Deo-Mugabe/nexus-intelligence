@@ -1,0 +1,56 @@
+version: "3.9"
+
+services:
+
+  postgres:
+    image: postgres:16-alpine
+    container_name: nexus_postgres
+    environment:
+      POSTGRES_USER: nexususer
+      POSTGRES_PASSWORD: nexuspass
+      POSTGRES_DB: core_banking
+    ports:
+      - "5432:5432"
+    volumes:
+      - ./data/seed/postgres:/docker-entrypoint-initdb.d
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U nexususer -d core_banking"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+  mysql:
+    image: mysql:8.0
+    container_name: nexus_mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: rootpass
+      MYSQL_DATABASE: crm_system
+      MYSQL_USER: nexususer
+      MYSQL_PASSWORD: nexuspass
+    ports:
+      - "3306:3306"
+    volumes:
+      - ./data/seed/mysql:/docker-entrypoint-initdb.d
+      - mysql_data:/var/lib/mysql
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-u", "nexususer", "-pnexuspass"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+  redis:
+    image: redis:7-alpine
+    container_name: nexus_redis
+    ports:
+      - "6379:6379"
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+volumes:
+  postgres_data:
+  mysql_data:
+
