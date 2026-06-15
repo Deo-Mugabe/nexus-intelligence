@@ -19,7 +19,7 @@ Built for organizations that need:
 
 Data Sources → Federation → Context Engine → Agent Mesh → UI
 
-↑                   │
+↑                                           │
 
 └── Learning ───────┘
 
