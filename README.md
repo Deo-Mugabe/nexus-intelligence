@@ -17,9 +17,16 @@ Built for organizations that need:
 
 ## Architecture
 
-Data Sources → Federation → Context Engine → Agent Mesh → UI
-      ↑         │
-      └──── Learning ────┘
+```mermaid
+flowchart LR
+    DS[Data Sources] --> F[Federation]
+    F --> CE[Context Engine]
+    CE --> AM[Agent Mesh]
+    AM --> UI[UI]
+
+    UI -. Feedback .-> CE
+    CE -. Learning .-> F
+```
 
 ## Quick Start
 
