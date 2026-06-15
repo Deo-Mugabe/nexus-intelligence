@@ -41,14 +41,14 @@ make test-federation
 
 | Service | Status |
 |---|---|
-| Federation | ��� In Progress |
-| Context Engine | ��� Planned |
-| Document Intel | ��� Planned |
-| Agent Mesh | ��� Planned |
-| Governance | ��� Planned |
-| HITL | ��� Planned |
-| Gateway | ��� Planned |
-| Dashboard | ��� Planned |
+| Federation | 🔨 In Progress |
+| Context Engine | 📋 Planned |
+| Document Intel | 📋 Planned |
+| Agent Mesh | 📋 Planned |
+| Governance | 📋 Planned |
+| HITL | 📋 Planned |
+| Gateway | 📋 Planned |
+| Dashboard | 📋 Planned |
 
 ## Tech Stack
 
